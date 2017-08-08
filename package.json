@@ -1,6 +1,6 @@
 {
-  "name": "dui_design",
-  "version": "1.12.0",
+  "name": "duid",
+  "version": "1.0.0",
   "title": "dui Design",
   "description": "PDD backgroud React UI components based on ant-design",
   "keywords": [
@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ant-design/ant-design"
+    "url": "https://github.com/bullyork/dui_design"
   },
   "bugs": {
-    "url": "https://github.com/ant-design/ant-design/issues"
+    "url": "https://github.com/bullyork/dui_design/issues"
   },
   "main": "lib/index.js",
   "module": "es/index.js",
