@@ -17,9 +17,81 @@ timeline: true
 
 ---
 
+## 2.12.5
+
+`2017-08-07`
+
+- 修复 ES 模式下报 `SelectPropTypes not found` 的问题。[#7123](https://github.com/ant-design/ant-design/issues/7123)
+- 修复 Row 在 flex 模式下元素不换行的问题。[4f73a23](https://github.com/ant-design/ant-design/commit/4f73a23a103733a3c148bb04013493a042f90a8f)
+- 修复 InputNumber 和 RangePicker 的样式问题。[#7117](https://github.com/ant-design/ant-design/issues/7117) [#7126](https://github.com/ant-design/ant-design/issues/7126)
+
+## 2.12.4
+
+`2017-08-06`
+
+- 修复了 Affix 在 IE 下调用对象无效的报错。[#7060](https://github.com/ant-design/ant-design/issues/7060)
+- 对 Badge 默认 title 的出现条件进行了优化。[#7024](https://github.com/ant-design/ant-design/issues/7024)
+- Card
+  - 修改了文档中 `onHovering` 属性的错误描述。[#7078](https://github.com/ant-design/ant-design/issues/7078)
+  - 修复了 `children` 的类型定义。[pull/7030](https://github.com/ant-design/ant-design/pull/7030) [@djyde](https://github.com/djyde)
+- 修复了 Collapse `onChange` 属性参数的类型定义。[pull/7084](https://github.com/ant-design/ant-design/pull/7084) [@davidctj](https://github.com/davidctj)
+- Dropdown
+  - 修复了 Dropdown.Button 的对齐问题。[#7070](https://github.com/ant-design/ant-design/issues/7070)
+  - 补充了文档中缺失的 `size` 属性。[pull/7071](https://github.com/ant-design/ant-design/pull/7071) [@hansnow](https://github.com/hansnow)
+- Input
+  - 修复了 outline 被 addon 遮盖的问题。[commit/0f63c7](https://github.com/ant-design/ant-design/commit/0f63c7186ef3a5db36c01df9d9ebde9d5b3871ef)
+  - 修复了 InputGroup 的示例问题。[pull/7089](https://github.com/ant-design/ant-design/pull/7089) [@jdz321](https://github.com/jdz321)
+- 修复了 InputNumber 格式化示例的报错问题。[pull/7098](https://github.com/ant-design/ant-design/pull/7098) [@tim-soft](https://github.com/tim-soft)
+- Menu
+  - 修复了 Menu 折叠并缩起时的不正常表现。[#7048](https://github.com/ant-design/ant-design/issues/7048) [#7063](https://github.com/ant-design/ant-design/issues/7063)
+  - 修复了子菜单被选中时 SubMenu 没有高亮的问题。[pull/7042](https://github.com/ant-design/ant-design/pull/7042) [@atomgao](https://github.com/atomgao)
+- 修复了 notification `type` 的类型定义。[#7073](https://github.com/ant-design/ant-design/issues/7073) [@marswong](https://github.com/marswong)
+- 修复了 Pagination `showTotal` 的类型定义。[#7054](https://github.com/ant-design/ant-design/issues/7054)
+- 修复了 RangePicker 在清空后的报错问题。[#7077](https://github.com/ant-design/ant-design/issues/7077)
+- 补充了 Select 缺失的 `onFocus` `onBlur` 类型定义。[pull/7082](https://github.com/ant-design/ant-design/pull/7082) [@troynt](https://github.com/troynt)
+- 修复了 Tabs 垂直模式下 `tabBarExtraContent` 样式错乱的问题。rc-tabs 升级到 9.0.2，对 TabBar 的 `extraContent` 的结构进行了重构。[#6578](https://github.com/ant-design/ant-design/issues/6578)
+- 修复了 TreeSelect 图标不能正常展示的问题。[#7020](https://github.com/ant-design/ant-design/issues/7020)
+- 修复了 `error TS7016: Could not find a declaration file for module 'rc-util/lib/Dom/addEventListener'` 的报错。[#7033](https://github.com/ant-design/ant-design/issues/7033) [@djyde](https://github.com/djyde)
+- 完成了『模式-列表』的文档翻译。[list](https://ant.design/docs/pattern/list) [@zachguo](https://github.com/zachguo)
+
+## 2.12.3
+
+`2017-07-30`
+
+- 修复 Checkbox 半选状态禁用时的样式。
+- 修复 Card 会出现 `this.container` 不存在的问题。[#6976](https://github.com/ant-design/ant-design/pull/6976) [@neekey](https://github.com/neekey)
+- 修复基础字体改为 `14px` 时 Button 的对齐问题。[#7001](https://github.com/ant-design/ant-design/issues/7001)
+- 修复 Grid Card 的内边距。
+- Dropdown
+  - 修复菜单可能被多次点击的问题。[#6314](https://github.com/ant-design/ant-design/issues/6314)
+  - 修复在菜单显示前 hover 会导致菜单消失的问题。[#6949](https://github.com/ant-design/ant-design/issues/6949)
+  - 修复菜单的错位问题。
+- 改进了 Menu 的动画效果。[#6955](https://github.com/ant-design/ant-design/pull/6955)
+- 调整了 DatePicker 中图标的位置。
+- 新增 less 变量。[e1a46cc](https://github.com/ant-design/ant-design/commit/e1a46cc419fb4975ae1782ba793b378c8e584057)
+- 修复了一些 TypeScript 定义问题。
+
+## 2.12.2
+
+`2017-07-22`
+
+- 将 message 默认出现的时长从 1.5s 调整为 3s。
+- 重构了 Anchor，修复未滚动时链接没有高亮的问题。[#6473](https://github.com/ant-design/ant-design/issues/6473)
+- 修复 Input.TextArea 的失效样式。[#6858](https://github.com/ant-design/ant-design/pull/6858) [@lyz810](https://github.com/lyz810)
+- 修复 TimePicker 的失效样式。[#6918](https://github.com/ant-design/ant-design/issues/6918)
+- 修复 2.12.1 里再次出现的表单反馈图标和下拉图标重叠的问题。[#4431](https://github.com/ant-design/ant-design/issues/4431)
+- 修复垂直 Tabs 的切换箭头样式。[255eac9](https://github.com/ant-design/ant-design/commit/255eac907949ded5b79f216a29831dcf4afa9362)
+- 调整波兰语的文案。[#6869](https://github.com/ant-design/ant-design/pull/6869) [#6870](https://github.com/ant-design/ant-design/pull/6870) [#6871](https://github.com/ant-design/ant-design/pull/6871) [@imosapatryk](https://github.com/imosapatryk)
+- 修复源码中含有 http 的链接而被集团安全扫描工具报错的问题。[#6893](https://github.com/ant-design/ant-design/issues/6893)
+- 调整 Menu 的图标和文字对齐问题。
+- 修复一个 Tooltip 的 `overlay is marked as required` 的警告问题。[#6897](https://github.com/ant-design/ant-design/issues/6897)
+- 修复 Slider 在有色背景下的失效样式。[#6665](https://github.com/ant-design/ant-design/issues/6665)
+- 调整了 TreeSelect 选项的点击范围。
+- 修复了一些 TypeScript 定义问题。
+
 ## 2.12.1
 
-`2017-07-14`
+`2017-07-17`
 
 - 修复保加利亚语中的拼写错误。[#6788](https://github.com/ant-design/ant-design/pull/6788) [@NoHomey](https://github.com/NoHomey)
 - 修复 `<Avatar src="..." />` 无法加载图片时的样式问题。[#6804](https://github.com/ant-design/ant-design/issues/6804)
@@ -28,6 +100,8 @@ timeline: true
 - 修复 `Collapse.Panel[header]` 内容过长时的样式问题。[#6832](https://github.com/ant-design/ant-design/issues/6832)
 - Input
   - 修复 `className` 没有添加到 wrapper 上的问题。[#6809](https://github.com/ant-design/ant-design/issues/6809)
+  - 修复 `Input.Search` 的 TypeScript 定义。[#6837](https://github.com/ant-design/ant-design/pull/6837) [@newraina](https://github.com/newraina)
+  - 修复 `Input.TextArea` 的 value 无法被重置的问题。[#6776](https://github.com/ant-design/ant-design/issues/6776)
   - 修复 `Input.Group` 内使用 Select 组件时的 error 样式问题。
 
     <img src="https://user-images.githubusercontent.com/507615/27983847-551ffe0a-63f9-11e7-81ba-8c3336ddafd0.png" />
@@ -65,7 +139,7 @@ timeline: true
   - 优化了样式。[#6665](https://github.com/ant-design/ant-design/issues/6665)
   - rc-slider 升级至 8.2.0，新增 `dotStyle`，`activeDotStyle` 属性。[rc-slider/pull/292](https://github.com/react-component/slider/pull/292)
 - 修复 Spin 遮罩层被穿透的样式问题。[#6759](https://github.com/ant-design/ant-design/issues/6759)
-- 修复嵌套 Steps 的样式问题。[#6754](https://github.com/ant-design/ant-design/issues/6754) 
+- 修复嵌套 Steps 的样式问题。[#6754](https://github.com/ant-design/ant-design/issues/6754)
 - Table
   - 修复了固定头部 Table 中展开区域的背景色样式问题。[#6657](https://github.com/ant-design/ant-design/issues/6657)
   - 补充了 Table 文档中缺失的 `onRowDoubleClick` 属性。[pull/6667](https://github.com/ant-design/ant-design/pull/6667) [@yurtaev](https://github.com/yurtaev)

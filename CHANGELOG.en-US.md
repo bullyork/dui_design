@@ -17,6 +17,102 @@ If you want to read change logs before `2.0.0`, please visit [GitHub](https://gi
 
 ---
 
+## 2.12.5
+
+`2017-08-07`
+
+- Fix the `SelectPropTypes not found` issue under es mode. [#7123](https://github.com/ant-design/ant-design/issues/7123)
+- Fix Row no wrap issue. [4f73a23](https://github.com/ant-design/ant-design/commit/4f73a23a103733a3c148bb04013493a042f90a8f)
+- Fix broken style of InputNumber and RangePicker. [#7117](https://github.com/ant-design/ant-design/issues/7117) [#7126](https://github.com/ant-design/ant-design/issues/7126)
+
+## 2.12.4
+
+`2017-08-06`
+
+- Fix Affix throw invalid calling object in IE. [#7060](https://github.com/ant-design/ant-design/issues/7060)
+- Make optimization for title display behavior of Badge. [#7024](https://github.com/ant-design/ant-design/issues/7024)
+- Card
+  - Fix `noHovering` API typo. [#7078](https://github.com/ant-design/ant-design/issues/7078)
+  - Fix `children` type definitions. [pull/7030](https://github.com/ant-design/ant-design/pull/7030) [@djyde](https://github.com/djyde)
+- Fix Collapse `onChange` parameter type definitions. [pull/7084](https://github.com/ant-design/ant-design/pull/7084) [@davidctj](https://github.com/davidctj)
+- Dropdown
+  - Fix Dropdown.Button align issue. [#7070](https://github.com/ant-design/ant-design/issues/7070)
+  - Add `size` prop for docs. [pull/7071](https://github.com/ant-design/ant-design/pull/7071) [@hansnow](https://github.com/hansnow)
+- Input
+  - Fix outline covered by addon. [commit/0f63c7](https://github.com/ant-design/ant-design/commit/0f63c7186ef3a5db36c01df9d9ebde9d5b3871ef)
+  - Fix InputGroup demo. [pull/7089](https://github.com/ant-design/ant-design/pull/7089) [@jdz321](https://github.com/jdz321)
+- Fix InputNumber Formatter demo issue. [pull/7098](https://github.com/ant-design/ant-design/pull/7098) [@tim-soft](https://github.com/tim-soft)
+- Menu
+  - Fix abnormal performance of inlineCollapsed Menu. [#7048](https://github.com/ant-design/ant-design/issues/7048) [#7063](https://github.com/ant-design/ant-design/issues/7063)
+  - Fix SubMenu can't be highlighted if its children are selected. [pull/7042](https://github.com/ant-design/ant-design/pull/7042) [@atomgao](https://github.com/atomgao)
+- Fix notification `type` type definitions. [#7073](https://github.com/ant-design/ant-design/issues/7073) [@marswong](https://github.com/marswong)
+- Fix Pagination `showTotal` type definitions. [#7054](https://github.com/ant-design/ant-design/issues/7054)
+- Fix RangePicker throw error after clear. [#7077](https://github.com/ant-design/ant-design/issues/7077)
+- Adds `onFocus` and `onBlur` type definitions for Select. [pull/7082](https://github.com/ant-design/ant-design/pull/7082) [@troynt](https://github.com/troynt)
+- Fix Tabs `tabBarExtraContent` style issue in vertical mode. Upgrade rc-tabs to 9.0.2, refactor the dom structure of TabBar `extraContent`. [#6578](https://github.com/ant-design/ant-design/issues/6578)
+- Fix missing icon issue for TreeSelect. [#7020](https://github.com/ant-design/ant-design/issues/7020)
+- Fix `error TS7016: Could not find a declaration file for module 'rc-util/lib/Dom/addEventListener'`. [#7033](https://github.com/ant-design/ant-design/issues/7033) [@djyde](https://github.com/djyde)
+- Translate patterns/list. [list](https://ant.design/docs/pattern/list) [@zachguo](https://github.com/zachguo)
+
+## 2.12.3
+
+`2017-07-30`
+
+- Fix indeterminate Checkbox style when it's disabled.
+- Fix Card `this.container` may not exists issue. [#6976](https://github.com/ant-design/ant-design/pull/6976) [@neekey](https://github.com/neekey)
+- Fix Button align issue when set base font to `14px`. [#7001](https://github.com/ant-design/ant-design/issues/7001)
+- Dropdown
+  - Fix Menu can be multiple cicked. [#6314](https://github.com/ant-design/ant-design/issues/6314)
+  - Fix Menu dispears if it's hovered before it's shown. [#6949](https://github.com/ant-design/ant-design/issues/6949)
+  - Fix align issue.
+- Fix Grid Card padding.
+- Improve Menu animation.[#6955](https://github.com/ant-design/ant-design/pull/6955)
+- Twrak DatePicker icon position.
+- Add new less variables.[e1a46cc](https://github.com/ant-design/ant-design/commit/e1a46cc419fb4975ae1782ba793b378c8e584057)
+- Fix some issues of TypeScript definitions.
+
+## 2.12.2
+
+`2017-07-22`
+
+- Longer message duration (1.5s to 3s).
+- Fix Anchor links not highlighted. [#6473](https://github.com/ant-design/ant-design/issues/6473)
+- Fix disabled style of Input.TextArea. [#6858](https://github.com/ant-design/ant-design/pull/6858) [@lyz810](https://github.com/lyz810)
+- Fix disabled style of TimePicker. [#6918](https://github.com/ant-design/ant-design/issues/6918)
+- Fix overlaped issue of form feedback icon and select arrow which is introduced in `2.12.1` again. [#4431](https://github.com/ant-design/ant-design/issues/4431)
+- Fix vertical Tabs arrow style. [255eac9](https://github.com/ant-design/ant-design/commit/255eac907949ded5b79f216a29831dcf4afa9362)
+- Update Polish locale. [#6869](https://github.com/ant-design/ant-design/pull/6869) [#6870](https://github.com/ant-design/ant-design/pull/6870) [#6871](https://github.com/ant-design/ant-design/pull/6871) [@imosapatryk](https://github.com/imosapatryk)
+- Fix that `http` url incluced in source code. [#6893](https://github.com/ant-design/ant-design/issues/6893)
+- Adjust vertical align of Menu icon and text.
+- Fix `overlay is marked as required` warning of Tooltip. [#6897](https://github.com/ant-design/ant-design/issues/6897)
+- Fix disabled style of Slider under colored background. [#6665](https://github.com/ant-design/ant-design/issues/6665)
+- Adjust click area of TreeSelect item.
+- Fix some issues of TypeScript definitions.
+
+## 2.12.1
+
+`2017-07-17`
+
+- Fix typo in Bulgarian locales. [#6788](https://github.com/ant-design/ant-design/pull/6788) [@NoHomey](https://github.com/NoHomey)
+- Fix broken style of `<Avatar src="..." />` when image cannot be loaded. [#6804](https://github.com/ant-design/ant-design/issues/6804)
+- Fix broken style of loading icon button in `Button.Group`. [#6822](https://github.com/ant-design/ant-design/issues/6822)
+- Fix TypeScript's definition of Checkbox. [#6768](https://github.com/ant-design/ant-design/issues/6768)
+- Fix broken style of `Collapse.Panel[header]` when content is too long. [#6832](https://github.com/ant-design/ant-design/issues/6832)
+- Input
+  - Fix that `className` should be added to wrapper. [#6809](https://github.com/ant-design/ant-design/issues/6809)
+  - Fix TypeScript's definition of `Input.Search`. [#6837](https://github.com/ant-design/ant-design/pull/6837) [@newraina](https://github.com/newraina)
+  - Fix that value of `Input.TextArea` cannot be reset. [#6776](https://github.com/ant-design/ant-design/issues/6776)
+  - Fix broken style of error status of Select in `Input.Group`.
+
+    <img src="https://user-images.githubusercontent.com/507615/27983847-551ffe0a-63f9-11e7-81ba-8c3336ddafd0.png" />
+
+- Fix that the implementation of Layout should not affect Anchor and BackTop. [#6817](https://github.com/ant-design/ant-design/issues/6817)
+- Menu
+  - Fix animation of inline menu.
+  - Fix style of border of `Menu.Item`. [46ffda9](https://github.com/ant-design/ant-design/commit/46ffda9c9385ec54e0c78594ed6c280d40ef035d)
+- Fix that RangePicker should show correct months in panels when `value|defaultValue` is set. [#6764 point 3](https://github.com/ant-design/ant-design/issues/6764)
+- Fix alignment of Tooltip. [#6830](https://github.com/ant-design/ant-design/issues/6830)
+
 ## 2.12.0
 
 `2017-07-08`

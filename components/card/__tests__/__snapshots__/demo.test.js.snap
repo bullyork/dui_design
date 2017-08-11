@@ -83,54 +83,53 @@ exports[`renders ./components/card/demo/grid-card.md correctly 1`] = `
     <h3
       class="ant-card-head-title"
     >
-      卡片标题
+      Card Title
     </h3>
   </div>
   <div
     class="ant-card-body"
-    style="padding:0;"
   >
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
     <div
       class="ant-card-grid"
       style="width:25%;text-align:center;"
     >
-      卡片内容
+      Content
     </div>
   </div>
 </div>
@@ -234,7 +233,9 @@ exports[`renders ./components/card/demo/loading.md correctly 1`] = `
   <div
     class="ant-card-body"
   >
-    <div>
+    <div
+      class="ant-card-loading-content"
+    >
       <p
         class="ant-card-loading-block"
         style="width:94%;"

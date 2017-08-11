@@ -94,7 +94,8 @@ CustomizedForm = Form.create({})(CustomizedForm);
 
 #### 特别注意
 
-如果使用的是 `react@<15.3.0`，则 `getFieldDecorator` 调用不能位于纯函数组件中: https://github.com/facebook/react/pull/6534
+1. `getFieldDecorator` 不能用于装饰纯函数组件。
+1. 如果使用的是 `react@<15.3.0`，则 `getFieldDecorator` 调用不能位于纯函数组件中: https://github.com/facebook/react/pull/6534
 
 #### getFieldDecorator(id, options) 参数
 
@@ -107,6 +108,7 @@ CustomizedForm = Form.create({})(CustomizedForm);
 | options.getValueFromEvent | 可以把 onChange 的参数（如 event）转化为控件的值 | function(..args) | [reference](https://github.com/react-component/form#option-object) |
 | options.validateTrigger | 校验子节点值的时机 | string\|string[] | 'onChange' |
 | options.rules | 校验规则，参考下方文档 | object[] | |
+| options.validateFirst | 当某一规则校验不通过时，是否停止剩下的规则的校验 | boolean | false |
 | options.exclusive | 是否和其他控件互斥，特别用于 Radio 单选控件 | boolean | false |
 | options.normalize | 转换默认的 value 给控件，[一个选择全部的例子](https://codepen.io/afc163/pen/JJVXzG?editors=001) | function(value, prevValue, allValues): any | - |
 

@@ -147,7 +147,7 @@
   background-image: none;
   border: @border-width-base @border-style-base transparent;
   white-space: nowrap;
-  line-height: @line-height-base;
+  line-height: 1.15; // https://github.com/ant-design/ant-design/issues/7070
   .button-size(@btn-height-base; @btn-padding-base; @font-size-base; @btn-border-radius-base);
   user-select: none;
   transition: all .3s @ease-in-out;
@@ -224,11 +224,11 @@
 // circle button: the content only contains icon
 .btn-circle(@btnClassName: btn) {
   .square(@btn-circle-size);
-  .button-size(@btn-circle-size; 0; @font-size-base + 2; 50%);
+  .button-size(@btn-circle-size; 0; @font-size-base + 2px; 50%);
 
   &.@{btnClassName}-lg {
     .square(@btn-circle-size-lg);
-    .button-size(@btn-circle-size-lg; 0; @btn-font-size-lg + 2; 50%);
+    .button-size(@btn-circle-size-lg; 0; @btn-font-size-lg + 2px; 50%);
   }
 
   &.@{btnClassName}-sm {

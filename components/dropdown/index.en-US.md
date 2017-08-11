@@ -23,15 +23,18 @@ If there are too many operations to display, you can wrap them in a `Dropdown`. 
 | onVisibleChange     | a callback function takes an argument: `visible`, can be executed when the visible state is changing | Function(visible) | - |
 | placement | placement of pop menu: `bottomLeft` `bottomCenter` `bottomRight` `topLeft` `topCenter` `topRight` | String | `bottomLeft` |
 
-You can get the menu list by `antd.Menu`, and set a callback function `onSelect` for it if you need. The menu items and the dividers are also available, by using `antd.Menu.Item` and `antd.Menu.Divider` respectively.
+You can get the menu list by `antd.Menu`, and set a callback function `onSelect` for it if you need. The menu items and the dividers are also available, by using `Menu.Item` and `Menu.Divider` respectively.
 
 > Warning: You must set a unique `key` for `Menu.Item`.
+
+> Remove the highlighted style after click menu item via `<Menu selectedKey={[]}>`.
 
 ### Dropdown.Button
 
 | Property         | Description           | Type     | Default       |
 |--------------|----------------|----------|--------------|
 | type        | type of the button, the same as [Button](/components/button)   | string   | 'default'           |
+| size        | size of the button, the same as [Button](/components/button)   | string   | 'default'           |
 | onClick | a callback function, the same as [Button](/components/button), which will be executed when you click the button on the left       | Function   | -           |
 | trigger       | the trigger mode which can execute the drop-down action | Array<'click'\|'hover'>   | ['hover'] |
 | overlay | the dropdown menu | [Menu](/components/menu) | -           |

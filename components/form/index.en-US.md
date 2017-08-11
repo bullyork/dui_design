@@ -93,7 +93,8 @@ After wrapped by `getFieldDecorator`, `value`(or other property defined by `valu
 
 #### Special attention
 
-If you use `react@<15.3.0`, then, you can't use `getFieldDecorator` in stateless component: https://github.com/facebook/react/pull/6534
+1. `getFieldDecorator` can not be used to decorate stateless component.
+1. If you use `react@<15.3.0`, then, you can't use `getFieldDecorator` in stateless component: https://github.com/facebook/react/pull/6534
 
 #### getFieldDecorator(id, options) parameters
 
@@ -106,6 +107,7 @@ If you use `react@<15.3.0`, then, you can't use `getFieldDecorator` in stateless
 | options.getValueFromEvent | Specify how to get value from event or other onChange arguments | function(..args) | [reference](https://github.com/react-component/form#option-object) |
 | options.validateTrigger | When to validate the value of children node. | string\|string[] | 'onChange' |
 | options.rules | Includes validation rules. Please refer to "Validation Rules" part for details. | object[] | n/a |
+| options.validateFirst | Whether stop validate on first rule of error for this field. | boolean | false |
 | options.exclusive | Whether it is exclusive with other controls, particularly for Radio. | boolean | false |
 | options.normalize | Normalize value to form component, [a select-all example](https://codepen.io/afc163/pen/JJVXzG?editors=001) | function(value, prevValue, allValues): any | - |
 
