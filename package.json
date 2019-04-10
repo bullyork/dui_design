@@ -1,8 +1,8 @@
 {
   "name": "duid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "title": "dui Design",
-  "description": "PDD backgroud React UI components based on ant-design",
+  "description": "backgroud React UI components based on ant-design",
   "keywords": [
     "pdd",
     "ui",
